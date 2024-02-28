@@ -13,8 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Navigate to scripts directory
+        run: cd scripts
+
       - name: Zip scripts directory
-        run: zip -r scripts.zip scripts
+        run: zip -r ../scripts.zip .
 
       - name: Create Release
         id: create_release
