@@ -14,18 +14,18 @@ This project includes a python script that checks for a local Powerbox Advance r
 - Astrophotography camera that contains a dew heater such as the ZWO ASI 2600MC Pro
 
 ### Software
+- Pegasus Astro
+  - Install Unity Platform and TheSkyX Plugin; see [Pegasus Astro Website](https://pegasusastro.com/products/pocket-powerbox-advance-gen2)
 - NINA
   - Install NINA v3 if you haven't already (see [NINA Website](https://nighttime-imaging.eu))
-  - In NINA's Plug-in system, install the Sequencer Plug-in (requires NINA v3 for the features used here)
+  - In NINA's Plugin system, install the Sequencer Powerups plugin (requires NINA v3 for the features used here)
 - Python 3
   - Install Python 3 and ensure the python executable is in your path. The simplest method is to install via the Microsoft App Store as it automatically updates the path.
-- Pegasus Astro
-  - Install Unity Platform and TheSkyX Plugin; see [Pegasus Astro Website](https://pegasusastro.com/products/pocket-powerbox-advance-gen2))
 
 ## Installation
 
-- Download scripts.zip
-- Unzip contents into %UserProfile%\Documents\N.I.N.A and verify you have a %UserProfile%\Documents\N.I.N.A\scripts directory afterward
+- Download latest scripts.zip (see [Releases](releases))
+- Unzip contents into %UserProfile%\Documents\N.I.N.A and verify you have a %UserProfile%\Documents\N.I.N.A\scripts\nina-camera-dew-heater directory afterward
 
 ## NINA Sequence
 
