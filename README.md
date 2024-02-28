@@ -24,7 +24,7 @@ This project includes a python script that checks for a local Powerbox Advance r
 
 ## Installation
 
-- Download latest scripts.zip (see [Releases](releases))
+- Download latest scripts.zip (see [Releases](../../releases))
 - Unzip contents into %UserProfile%\Documents\N.I.N.A and verify you have a %UserProfile%\Documents\N.I.N.A\scripts\nina-camera-dew-heater directory afterward
 
 ## NINA Sequence
