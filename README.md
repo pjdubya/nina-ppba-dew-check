@@ -10,15 +10,15 @@ This project includes a python script that checks for a local Powerbox Advance r
 
 ### Hardware
 
-- Pegasus Powerbox Advance Gen2 (must also install related software Unity Platform and TheSkyX Plugin; see https://pegasusastro.com/products/pocket-powerbox-advance-gen2)
+- Pegasus Powerbox Advance Gen2 (must also install related software Unity Platform and TheSkyX Plugin; see [Pegasus Astro Website](https://pegasusastro.com/products/pocket-powerbox-advance-gen2))
 - Astrophotography camera that contains a dew heater such as the ZWO ASI 2600MC Pro
 
 ### Software
 - NINA
- - Install NINA v3 if you haven't already (see https://nighttime-imaging.eu)
- - In NINA's Plug-in system, install the Sequencer Plug-in (requires NINA v3 for the features used here)
+  - Install NINA v3 if you haven't already (see [NINA Website](https://nighttime-imaging.eu))
+  - In NINA's Plug-in system, install the Sequencer Plug-in (requires NINA v3 for the features used here)
 - Python 3
- - Install Python 3 and ensure the python executable is in your path. The simplest method is to install via the Microsoft App Store as it automatically updates the path.
+  - Install Python 3 and ensure the python executable is in your path. The simplest method is to install via the Microsoft App Store as it automatically updates the path.
 
 ## Installation
 
