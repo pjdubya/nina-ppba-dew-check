@@ -10,7 +10,7 @@ This project includes a python script that checks for a local Powerbox Advance r
 
 ### Hardware
 
-- Pegasus Powerbox Advance Gen2 (must also install related software Unity Platform and TheSkyX Plugin; see [Pegasus Astro Website](https://pegasusastro.com/products/pocket-powerbox-advance-gen2))
+- Pegasus Powerbox Advance Gen2
 - Astrophotography camera that contains a dew heater such as the ZWO ASI 2600MC Pro
 
 ### Software
@@ -19,6 +19,8 @@ This project includes a python script that checks for a local Powerbox Advance r
   - In NINA's Plug-in system, install the Sequencer Plug-in (requires NINA v3 for the features used here)
 - Python 3
   - Install Python 3 and ensure the python executable is in your path. The simplest method is to install via the Microsoft App Store as it automatically updates the path.
+- Pegasus Astro
+  - Install Unity Platform and TheSkyX Plugin; see [Pegasus Astro Website](https://pegasusastro.com/products/pocket-powerbox-advance-gen2))
 
 ## Installation
 
@@ -30,3 +32,9 @@ This project includes a python script that checks for a local Powerbox Advance r
 - Download templates\nina-camera-dew-heater.json and place into your %UserProfile%\Documents\N.I.N.A\Templates direcctory
 - In NINA, navigate to Sequencer, Advanced Sequencer, select the icon to open a sequence, then open the above file
 - In the External Script command, edit the USERNAME to your username, or otherwise edit the path to the batch file to match where you placed it
+
+## Notes
+
+This is something of a proof of concept as to how to communicate with the Powerbox Advance using the APIs they provide. If you don't wish to run the python script for some reason, another approach is to change the "When" expression in the sequencer to simply check whether DewA or DewB is > 0, which is an indication that the Powerbox Advance determined the conditions warranted at least some dew heater power. Be sure to configure and connect to your Powerbox Advance in NINA's Equipment > Switch first for DewA and DewB to be valid variables for the "When" expression.
+
+Pegasus Astro provides other APIs for this and their other devices, so the script can be easily extended to perform more complex actions. To see the API documentation, open Pegasus Astro Unity Platform, select Application/Configuration > API Docs > Development API. 
