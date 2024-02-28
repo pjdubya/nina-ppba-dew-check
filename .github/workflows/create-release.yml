@@ -13,11 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Navigate to scripts directory
-        run: cd scripts
-
       - name: Zip scripts directory
-        run: zip -r ../scripts.zip .
+        run: zip -r scripts.zip .
+        working-directory: scripts
 
       - name: Read version information from version.txt
         id: version
