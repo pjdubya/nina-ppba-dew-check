@@ -19,14 +19,26 @@ jobs:
       - name: Zip scripts directory
         run: zip -r ../scripts.zip .
 
+      - name: Read version information from version.txt
+        id: version
+        run: |
+          echo "::set-output name=major::$(grep '^MAJOR=' version.txt | cut -d'=' -f2)"
+          echo "::set-output name=minor::$(grep '^MINOR=' version.txt | cut -d'=' -f2)"
+          echo "::set-output name=patch::$(grep '^PATCH=' version.txt | cut -d'=' -f2)"
+
+      - name: Set release version
+        id: set_version
+        run: |
+          echo "${MAJOR}.${MINOR}.${PATCH}" > version.txt
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          tag_name: v${{ steps.version.outputs.major }}.${{ steps.version.outputs.minor }}.${{ steps.version.outputs.patch }}.${{ github.run_number }}
+          release_name: Release v${{ steps.version.outputs.major }}.${{ steps.version.outputs.minor }}.${{ steps.version.outputs.patch }}.${{ github.run_number }}
           body: |
             Automatically created release from GitHub Actions
           draft: false
