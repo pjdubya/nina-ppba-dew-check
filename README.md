@@ -18,7 +18,7 @@ This project includes a python script that checks for a local Powerbox Advance r
   - Install Unity Platform and TheSkyX Plugin; see [Pegasus Astro Website](https://pegasusastro.com/products/pocket-powerbox-advance-gen2)
 - NINA
   - Install NINA v3 if you haven't already (see [NINA Website](https://nighttime-imaging.eu))
-  - In NINA's Plugin system, install the Sequencer Powerups plugin (requires NINA v3 for the features used here)
+  - In NINA's Plugin system, install the Sequencer Powerups plugin; requires NINA v3 for the features used here (see [plugin documentation](https://marcblank.github.io) for more details on features)
 - Python 3
   - Install Python 3 and ensure the python executable is in your path. The simplest method is to install via the Microsoft App Store as it automatically updates the path.
 
